@@ -1,0 +1,74 @@
+<html data-theme="light">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>It's me Xperian!</title>
+    <link rel="icon" href="assets/profile.png" />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+    .projects {
+      div {
+        padding: 5%;
+        margin: 1%;
+        background-color: var(--color-high);
+      }
+    }
+  </style>
+  <script src="script.js" defer></script>
+  <body id="body">
+    <header>
+      <button
+        type="button"
+        data-theme-toggle
+        aria-label="Change to light theme"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="toggle-svg"
+        >
+          <path d="M12 2v2" />
+          <path
+            d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715"
+          />
+          <path d="M16 12a4 4 0 0 0-4-4" />
+          <path d="m19 5-1.256 1.256" />
+          <path d="M20 12h2" />
+        </svg>
+      </button>
+    </header>
+    <h2>My Projects:</h2>
+    <div class="projects">
+      <div>
+        <h3>StepSystem</h3>
+        <p>A feel good study system.</p>
+        <a href="https://github.com/xperiandev/stepsystem"
+          >Github repository (GPLv3)</a
+        >,
+        <a href="https://stepsystem.vercel.app">Website</a>
+      </div>
+      <div>
+        <h3>Bubble Pop</h3>
+        <p>A simple scratch game about popping bubbles.</p>
+        <a href="https://github.com/xperiandev/bubble-pop"
+          >Github repository (GPLv3)</a
+        >,
+        <a href="https://xperian.itch.io/bubble-pop">Itch.io page</a>
+      </div>
+      <h4>There will be more soon...</h4>
+    </div>
+    <footer>
+      <br />
+      Created by Xperian<br />
+      This site is Open Source (GPLv3)
+    </footer>
+  </body>
+</html>

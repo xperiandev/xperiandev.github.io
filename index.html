@@ -1,4 +1,4 @@
-<html>
+<html data-theme="light">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <head>
@@ -7,29 +7,61 @@
   </head>
   <link rel="stylesheet" href="style.css" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap'); 
   </style>
   <script src="script.js" defer></script>
   <body id="body">
     <img class="sticklogo" alt="logo" src="assets/profile.png" /><br />
     <header>
+      <button
+        type="button"
+        data-theme-toggle
+        aria-label="Change to light theme"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="toggle-svg"
+        >
+          <path d="M12 2v2" />
+          <path
+            d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715"
+          />
+          <path d="M16 12a4 4 0 0 0-4-4" />
+          <path d="m19 5-1.256 1.256" />
+          <path d="M20 12h2" />
+        </svg>
+      </button>
       <h2>Hello there!</h2>
-      <button id="toggle" onclick="darktoggle()" id="theme"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg></button>
     </header>
     <div class="about-div">
+      <h2 id="hello">Hello! I am Xperian.</h2>
       <br />
-      <h2 id="hello">Hello! I am Xperian. </h2><br /><br />
       <p id="about">
-        I am a teen, and trying to be a developer and learning new stuff HTML,
-        CSS, Godot, Scratch, Python etc.
-
+        I am a teen developer learning new things. I use HTML, CSS, Scratch. I
+        am currently learning Python and Godot.
+        <br /><br />
+        <div class="hyperlinks">
+          <ul>
+            <li><a href="https://github.com/xperiandev">Github</a></li>
+            <li><a href="http://xperian.is-a.dev">My website</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+          </ul>
+        </div>
+      </p>
     </div>
+
     <br />
     <footer>
       <br />
       Created by Xperian<br />
-      All rights reserved.
+      This site is Open Source (GPLv3)
     </footer>
   </body>
 </html>
-

@@ -9,47 +9,79 @@ html {
   font-family: "Gabarito";
 }
 
-:root{
-  --color-bg : #ffffff;
-  --color-fg : #000000;
-  --accent : #0071ff;
-  --color-high : #EEEEEE;
+:root {
+  --border-radius-base: 3rem;
 }
 
-.dark-mode {
-  --color-fg: #ffffff;
-  --color-bg: #212121;
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
   --accent: #0071ff;
-  --color-high : #1d1d1d;
+  --color-high: #eeeeee;
+  --link-color: #0066cc;
+  --link-visited: #551a8b;
+  --link-hover: #003d99;
+  --link-active: #ff0000;
+}
+
+[data-theme="dark"] {
+  --color-bg: #212121;
+  --color-fg: #ffffff;
+  --accent: #0071ff;
+  --color-high: #1d1d1d;
+  --link-color: #87cefa;
+  --link-visited: #bb86fc;
+  --link-hover: #ffffff;
+  --link-active: #ff4040;
 }
 
 img.sticklogo {
-
-  width: 50%;
+  width: 25%;
   position: static;
   top: 0;
   display: block;
   margin: 0 auto;
+  clip-path: circle(50% at 50% 50%);
 }
 
-#toggle {
-  margin: 1%;
-  padding: 1.5%;
-  border: 0.1% solid;
-  border-radius: 50%;
-  background: var(--color-bg);
-  position: fixed;
-  right: 0%;
-  top: 0%;
+.hyperlinks {
+  width: 100%;
+  line-height: 1.4em;
 }
 
-#toggle svg{
-  fill: var(--color-fg);
+ul {
+  list-style: none;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  margin-bottom: -1.4em;
+}
+ul:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+li {
+  display: inline-block;
 }
 
-body {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
+a:link {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--link-active);
 }
 
 header {
@@ -57,6 +89,25 @@ header {
   h2 {
     text-decoration: underline;
   }
+  button {
+    border: none;
+    background-color: var(--color-bg);
+  }
+}
+
+.toggle-svg {
+  background: var(--color-bg);
+  stroke: var(--color-fg);
+  margin: 1%;
+  padding: 1.5%;
+  position: fixed;
+  right: 0%;
+  top: 0%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
 }
 
 #underConstruction {
@@ -71,21 +122,9 @@ footer {
 }
 
 .about-div {
-  border-radius: 12%;
+  border-radius: var(--border-radius-base);
   background: var(--color-high);
   padding: 8%;
   text-align: center;
   margin: 6%;
-}
-
-#toggle svg:last-child{
-  display: none;
-}
-
-.dark-mode #toggle svg:first-child{
-  display: none;
-}
-
-.dark-mode #toggle svg:last-child{
-  display: block;
 }
