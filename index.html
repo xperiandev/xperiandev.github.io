@@ -1,67 +1,50 @@
-<html data-theme="light">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <head>
-    <title>It's me Xperian!</title>
-    <link rel="icon" href="assets/profile.png" />
-  </head>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap'); 
-  </style>
-  <script src="script.js" defer></script>
-  <body id="body">
-    <img class="sticklogo" alt="logo" src="assets/profile.png" /><br />
-    <header>
-      <button
-        type="button"
-        data-theme-toggle
-        aria-label="Change to light theme"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="toggle-svg"
-        >
-          <path d="M12 2v2" />
-          <path
-            d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715"
-          />
-          <path d="M16 12a4 4 0 0 0-4-4" />
-          <path d="m19 5-1.256 1.256" />
-          <path d="M20 12h2" />
-        </svg>
-      </button>
-      <h2>Hello there!</h2>
-    </header>
-    <div class="about-div">
-      <h2 id="hello">Hello! I am Xperian.</h2>
-      <br />
-      <p id="about">
-        I am a teen developer learning new things. I use HTML, CSS, Scratch. I
-        am currently learning Python and Godot.
-        <br /><br />
-        <div class="hyperlinks">
-          <ul>
-            <li><a href="https://github.com/xperiandev">Github</a></li>
-            <li><a href="http://xperian.is-a.dev">My website</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-          </ul>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A profile website for Xperian">
+    <title>Hello, I am Xperian</title>
+    <link rel="icon" href="./assets/profile.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap'); 
+    </style>
+</head>
+<body>
+    <header class="header main-header">
+        <h1 class="main-heading">Hello world, I am Xperian.</h1>
+        <img src="./assets/profile.png" alt="Profile picture of Xperian" class="img profile">
+      </header>
+      <section class="section about">
+        <h2 class="section-header">About Me</h2>
+        <p class="about-text">
+          I am a teen developer exploring possibilties and learning new languages. I use HTML and CSS and I am learning Python and GDScript.
+        </p>
+      </section>
+      <section class="section projects">
+        <h2 class="section-header">My Projects</h2>
+        <div class="project-item">
+          <h3 class="project-name">StepSystem</h3>
+          <img class="project-img" src="./assets/stepsystem.png" alt="StepSystem Picture">
+          <p class="project-description">StepSystem is a study system project made entirely with HTML, CSS wich focuses on study tips and planning methods (in early alpha)</p>
+          <span class="project-links"><a href="https:/www.github.com/xperiandev/stepsystem">Github Repository</a> | <a href="https://stepsystem.vercel.app">Website</a></span>
         </div>
-      </p>
-    </div>
-
-    <br />
-    <footer>
-      <br />
-      Created by Xperian<br />
-      This site is Open Source (GPLv3)
-    </footer>
-  </body>
+        <div class="project-item">
+          <h3 class="project-name">Bubble Pop</h3>
+          <img class="project-img" src="./assets/bubble-pop.png" alt="Bubble Pop Picture">
+          <p class="project-description">Bubble Pop is one of the earliest projects that I ever mande, built in Scratch and packaged using TurboWarp Packager.</p>
+          <span class="project-links"><a href="https:/www.github.com/xperiandev/bubble-pop">Github Repository</a> | <a href="https://xperian.itch.io/bubble-pop">Itch.io page</a>
+        </div>
+      </section>
+      <section class="section contact">
+        <h2 class="section-header">Contact me</h2>
+        <button><a href="mailto:devxperian@gmail.com">Email me</a></button>
+      </section>
+      <footer class="footer main-footer">
+        <p>Created by Xperian</p>
+        <p>This site is Open Source (GPLv3)</p>
+      </footer>
+</body>
 </html>
