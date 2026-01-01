@@ -7,11 +7,12 @@
 
 * {
   font-family: "Gabarito";
-  a{
+  a {
     color: var(--link-color);
     text-decoration: none;
   }
- a:hover, a:visited{
+  a:hover,
+  a:visited {
     color: var(--link-visited);
   }
 }
@@ -20,7 +21,7 @@
   --border-radius-base: 1.5rem;
   --fg-color: #f3f4f4;
   --bg-color: #061e29;
-  --headings-color: #e8f0ff ;
+  --headings-color: #e8f0ff;
   --footer-bg: #0b3041;
   --accent-1: #1d546d;
   --accent-2: #5f9598;
@@ -52,39 +53,40 @@ body {
 .section {
   text-align: center;
   padding: 1rem 6rem;
-  .section-header{
+  .section-header {
     color: var(--headings-color);
   }
 }
 
-.projects{
+.projects {
   padding: 2rem 7rem;
   margin: 0 auto;
   max-width: 45rem;
-  .project-item{
+  .project-item {
     border-radius: var(--border-radius-base);
     padding: 1rem;
     margin-bottom: 0.5rem;
     background-color: var(--accent-1);
   }
-  .project-img{
+  .project-img {
     width: 25rem;
   }
 }
 
-.contact{
-  button{
+.contact {
+  button {
     background-color: var(--accent-1);
+    border: none;
     width: 12em;
     height: 5em;
     border-radius: var(--border-radius-base);
-    a{
+    a {
       color: var(--fg-color);
     }
   }
 }
 
-.main-footer{
+.main-footer {
   background-color: var(--footer-bg);
   padding: 1.5rem 1rem;
   text-align: center;
