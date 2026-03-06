@@ -61,7 +61,6 @@ body {
 .projects {
   padding: 2rem 7rem;
   margin: 0 auto;
-  max-width: 45rem;
   .project-item {
     border-radius: var(--border-radius-base);
     padding: 1rem;
@@ -91,3 +90,4 @@ body {
   padding: 1.5rem 1rem;
   text-align: center;
 }
+
